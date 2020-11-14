@@ -1,0 +1,99 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "01 - gongc a",
+			"type": "shell",
+			"options": {
+				"cwd": "${workspaceFolder}/../metabaron/go/metabaron"
+			},
+			"command": "go",
+			"group": "build",
+			"args": [
+				"run",
+				"main.go",
+				"-pkgPath",
+				"../../../sandbox01/a/go/models",
+				"-loadAndGenerate",
+			]
+		},
+		{
+			"label": "03 - ng build a",
+			"type": "shell",
+			"options": {
+				"cwd": "${workspaceFolder}/a/ng"
+			},
+			"command": "ng",
+			"group": "build",
+			"args": [
+				"build",
+				"a"
+			]
+		},
+		{
+			"label": "04 - ng serve a",
+			"type": "shell",
+			"options": {
+				"cwd": "${workspaceFolder}/a/ng"
+			},
+			"command": "ng",
+			"group": "build",
+			"args": [
+				"serve"
+			]
+		},
+		{
+			"label": "01 - gongc b",
+			"type": "shell",
+			"options": {
+				"cwd": "${workspaceFolder}/../metabaron/go/metabaron"
+			},
+			"command": "go",
+			"group": "build",
+			"args": [
+				"run",
+				"main.go",
+				"-pkgPath",
+				"../../../sandbox01/b/go/models",
+				"-loadAndGenerate",
+			]
+		},
+		{
+			"label": "03 - ng build b",
+			"type": "shell",
+			"options": {
+				"cwd": "${workspaceFolder}/b/ng"
+			},
+			"command": "ng",
+			"group": "build",
+			"args": [
+				"build",
+				"b"
+			]
+		},
+		{
+			"label": "04 - ng serve b",
+			"type": "shell",
+			"options": {
+				"cwd": "${workspaceFolder}/b/ng"
+			},
+			"command": "ng",
+			"group": "build",
+			"args": [
+				"serve"
+			]
+		},
+		{
+			"label": "04 - ng serve c",
+			"type": "shell",
+			"options": {
+				"cwd": "${workspaceFolder}/c/ng"
+			},
+			"command": "ng",
+			"group": "build",
+			"args": [
+				"serve"
+			]
+		},
+	]
+}

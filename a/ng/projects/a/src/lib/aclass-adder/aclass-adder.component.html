@@ -1,0 +1,24 @@
+<div *ngIf="aclass">
+	<h3>New Aclass</h3>
+
+  <form>
+    <mat-form-field>
+      <mat-label>Floatfield</mat-label>
+      <input type="number" [ngModelOptions]="{standalone: true}"  matInput [(ngModel)]="aclass.Floatfield">
+    </mat-form-field>
+  </form>
+
+  <form>
+    <mat-form-field>
+      <mat-label>Namefield</mat-label>
+      <input name="" [ngModelOptions]="{standalone: true}" 	 matInput [(ngModel)]="aclass.Namefield">
+    </mat-form-field>
+  </form>
+
+
+
+	<button mat-raised-button 
+	(click)="add()">
+	Add
+	</button>
+</div>
